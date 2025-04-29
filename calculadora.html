@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Web</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="titulo">
+            <h1>Calculadora</h1>
+            <h2>Feita com JavaScript</h2>
+        </header>
+        
+        <input type="number" id="num1" placeholder="Primeiro número">
+        <select id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" placeholder="Segundo número">
+        <button onclick="calcular()">Calcular</button>
+        <h3 id="resultado"> 
+            <span id="resultadoText">Resultado:</span>
+            <span id="resultadoValue"></span>
+        </h3>
+    </div>
+    <footer>
+        <div id="links">
+            <img src="https://files.catbox.moe/e38o8g.svg">
+            <a href="https://github.com/reenaataa" >Github</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

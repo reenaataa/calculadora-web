@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edede4;
+    font-size: 13px;
+    color: #222;
+}
+#wrapper {
+    width: 600px;
+    margin: 190px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+#titulo {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+#titulo h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 1;
+}
+#titulo h2 {
+    font-weight: lighter;
+    font-size: 14px;
+}
+input {
+    background-color: #fff;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #efefef, inset 2px 2px #0a0a0a;
+    box-sizing: border-box;
+    padding: 3px 4px;
+    border: none;
+    font-size: 12px;
+    height: 30px;
+    width: 120px;
+    appearance: none;
+    line-height: 2;
+}
+select {
+    appearance: none;
+    background-image: url(https://files.catbox.moe/e6soc5.svg);
+    background-position: top 2px right 2px;
+    background-repeat: no-repeat;
+    padding-right: 32px;
+    background-color: #fff;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #efefef, inset 2px 2px #0a0a0a;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    text-align: center;
+    height: 21px;
+    width: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+input:focus, select:focus {
+    outline: none;
+}
+select:active {
+    background-image: url(https://files.catbox.moe/dteu6h.svg);
+}
+button {
+    background: silver;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    box-sizing: border-box;
+    color: transparent;
+    min-height: 23px;
+    min-width: 75px;
+    padding: 0 12px;
+    text-shadow: 0 0 #222;
+}
+button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+    text-shadow: 1px 1px #222;
+}
+button:focus {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+}
+#resultado {
+    display: none;
+    margin-top: 1em;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+#resultadoValue {
+    font-family: Arial;
+    font-weight: bold;
+}
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+#links a{
+    font-family: "Pixelify Sans", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+#links a:hover {
+    text-decoration: underline;
+}
+#links img {
+    width: 20px;
+    height: 20px;
+}
